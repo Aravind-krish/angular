@@ -1,0 +1,31 @@
+.headercard{
+    justify-content: center;
+    background-color: #1B98E0;
+}
+.DashBoardCardHeader{   
+    font-size: 20px;
+   font-weight: 600 !important;
+   color: #FFFFFF;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   .mat-card-title{
+       font-size: 18px !important;
+       font-weight: bold !important;
+       
+   }
+}
+.save{
+    color:#2ECC40 ;
+    cursor: pointer;
+    font-weight: bold;
+    padding-bottom: 1px !important;
+}
+.clear{
+    color:#F44336;
+    cursor: pointer;
+    font-weight: bold;
+    padding-bottom: 1px !important;
+}
+.fontsize{
+    font-size: 14px;
+}

@@ -1,0 +1,19 @@
+<div class="container-fluid p-0">
+    <mat-toolbar class="p-0 toolbarcolor">
+        <button mat-icon-button class="backbutton" (click) = "Homepage()">
+         <mat-icon class="backiconcolor">arrow_back</mat-icon>
+       </button>
+     </mat-toolbar>
+         <div class="col-sm-12 mt-2 oversize">
+            <div *ngIf ="status == 1">
+                <app-order-display ></app-order-display>
+            </div>
+            <div *ngIf ="status == 2">
+                <app-delivered></app-delivered>
+            </div>
+            <div *ngIf = "status == 3">
+                <app-to-be-pick></app-to-be-pick>
+            </div>
+                
+         </div>
+</div>

@@ -1,0 +1,106 @@
+<div class="col-sm-12 margintop">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+      <mat-card class="p-0">
+        <mat-card-header class="headercard">
+          <mat-card-title class="DashBoardCardHeader">SnowBird</mat-card-title>
+        </mat-card-header>
+        <div class="col-sm-12 mt-2">
+          <div class="row justify-content-center">
+            <div class="col-sm-6">
+              <div class="row justify-content-center">
+                  <span class="datefontsize">{{dateformat}}</span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-6 ml-1">
+                <div class="row Addressmargin">
+              <span class="FontHeader">Order Details</span>
+            </div>
+            </div>
+        </div>
+    </div>
+            <div class="col-xs-12 md-8 mt-4">
+              <div class="row">
+                <div class="col-xs-3 col-md-4 ">
+                    <div class="row imagemargin">
+                    <img class="img1" [src]="imgpath">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-5 Addressmargin mt-2">
+                  <div class="row">
+                  <div class="col-xs-12 col-md-8">
+                    <div class="row ordermargin">
+                    <div class="col-xs-6 pr-3">
+                      Order Number
+                    </div> 
+                    <div class="col-xs-6">
+                      : {{ViewDetails?.ORDER_NUMBER}}
+                    </div></div></div>
+                  <div class="col-xs-12 col-md-8">
+                    <div class="row ordermargin">
+                    <div class="col-xs-6 pr-5">
+                      Quantity
+                    </div>
+                    <div class="col-xs-6 pl-1">
+                      : {{ViewDetails?.ITEM_COUNT}}
+                    </div> </div></div>
+                  <div class="col-sm-12 col-md-12">
+                    <div class="row ordermargin">
+                    <div class="col-xs-6 pr-5">
+                      Total
+                    </div> 
+                    <div class="col-xs-2 pr-0 pl-4">
+                      : ₹
+                    </div>
+                    <div class="col-xs-5 pl-0">
+                      {{ViewDetails?.ORDER_VAL_AFTER_GST}}
+                    </div></div></div>
+                  <div class="col-sm-12 col-md-12">
+                    <div class="row ordermargin">
+                    <div class="col-xs-4 pr-5">
+                      Status 
+                    </div> 
+                    <div class="col-xs-8 pl-3">
+                      : {{ViewDetails?.ORDER_FLOW_STATUS}}
+                    </div> </div></div>
+                </div>
+                </div>
+              </div>
+            </div>
+        <div class="col-sm-12 mt-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                    
+                    <button mat-raised-button (click)="ConformOrder()" class="ConformOrder">Confirmed</button>
+                  
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-12 mt-4 Addressmargin">
+          <div class="row">
+          <div class="col-sm-12">
+            <span>Address:</span>
+          </div>
+            <div class="col-xs-12 col-md-12">
+                <span>{{Address}}</span>
+              </div>
+          <div class="col-sm-12">
+            <span>Pin Code :{{ViewDetails?.ECS_PIN_CODE}}</span>
+          </div>
+          <div class="col-sm-12">
+            <span>Mobile :{{ViewDetails?.ECS_MOBILE_NUMBER}}</span>
+          </div>
+          <div class="col-sm-12 mb-3">
+            <span>Email :{{ViewDetails?.ECS_EMAIL}}</span>
+          </div>
+        </div>
+        </div>
+      </mat-card>
+    </div>
+    </div>
+  </div>
+  

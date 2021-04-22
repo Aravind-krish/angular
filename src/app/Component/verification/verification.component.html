@@ -1,0 +1,58 @@
+
+    <mat-card class="p-1">
+        <mat-card-header class="headercard">
+            <mat-card-title class="DashBoardCardHeader">OTP Verification</mat-card-title>
+          </mat-card-header>
+          <form [formGroup]="LoginGroup" (ngSubmit)="login($event)">
+          <div class="col-sm-12 mt-3">
+              <div class="row">
+                <div class="col-sm-12 mb-1 p-1">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Username</mat-label>
+                            <input formControlName="UserName" matInput>
+                        <mat-icon matSuffix>account_circle</mat-icon>
+                      </mat-form-field>
+                  </div>
+              </div>
+          </div>
+          <div *ngIf = "sendotpMail == null"></div>
+          <div *ngIf = "sendotpMail != null">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 mb-1 p-1">
+                  <mat-form-field appearance="outline">
+                      <mat-label>OTP</mat-label>
+                      <input  (input)="onSearchChange($event.target.value)" (keypress)="keyPress($event)" formControlName="OTP" maxlength="6" matInput>
+                     
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 pt-0">
+            <div class="row d-flex justify-content-end">
+                        <span class="fontsize" (click)="Sendotp()">Resend OTP</span>
+                
+            </div>
+        </div>
+    </div>
+    </form>
+    <div *ngIf = "sendotpMail == null">
+        <div class="col-xs-12 p-0">
+            <div class="row justify-content-center">
+                <div class="col-xs-4 mt-3 mb-2 p-0">
+                    <button mat-raised-button type="submit" (click)="Sendotp()" class="Login">Send OTP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div *ngIf = "sendotpMail != null">
+        <div class="col-xs-12 p-0">
+            <div class="row justify-content-center">
+                <div class="col-xs-4 mt-3 mb-2 p-0">
+                    <button mat-raised-button type="submit" (click)="OTPConformation()" class="Login">OTP Verif</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    </mat-card>
+

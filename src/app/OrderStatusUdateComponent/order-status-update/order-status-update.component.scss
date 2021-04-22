@@ -1,0 +1,59 @@
+
+.headercard{
+    justify-content: center;
+    background-color: #1B98E0;
+}
+.DashBoardCardHeader{   
+    font-size: 20px;
+   font-weight: 600 !important;
+   color: #FFFFFF;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   .mat-card-title{
+       font-size: 18px !important;
+       font-weight: bold !important;
+       
+   }
+}
+.datefontsize{
+    font-size: 12px;
+    font-weight: bold;
+}
+.FontHeader{
+font-weight: bold;
+font-size: 14px;
+
+}
+.margintop{
+    margin-top: 40px;
+}
+.ConformOrder{
+    background-color:  rgb(233, 75, 27);
+    color:white;
+    font-weight: bold;
+    font-size :16px;
+    color: color(basic);
+    width: 100%;
+    padding: 0px !important;
+}
+.marginleftcity{
+    margin-left: 60px;
+}
+.img1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+  }
+  .imagemargin{
+      margin-left: 50px;
+  }
+  .ordermargin{
+      margin-left: 15px;
+  }
+  .Addressmargin{
+      margin-left: 30px !important;
+  }
+

@@ -1,0 +1,62 @@
+<div class="col-sm-12 mt-5">
+    <div class="row">
+            <div class="col-sm-3 mt-3">
+                <mat-card class="p-1 mat-elevation-z10 ripple-container cardcontenthight">
+                      
+                      <div class="col-sm-12 mt-3">
+                          <div class="col-sm-12 mt-3">
+                            <span class="loginfont">{{UserName}}</span>
+                          </div>
+                           <div class="col-sm-12 mt-1">
+                            <div class="row justify-content-center">
+                           <span class="loginfont">{{dateformat}}</span> 
+                        </div>
+                           </div>
+                      
+                    </div>
+                </mat-card>
+            </div>
+            <div class="col-sm-3 mt-3">
+                <mat-card class="p-1 mat-elevation-z10 ripple-container" matRipple (click)="tobepick()">
+                    <mat-card-header class="contentcentercolorpick">
+                        <mat-card-title class="DashBoardCardHeaderpick mb-2 mt-2">To be Picked</mat-card-title>
+                      </mat-card-header>
+                      <mat-card-content class="container-fluid DashBoardCardContent">
+                      <div class="col-sm-12">
+                          <div class="row d-flex justify-content-center">
+                            <span class="mt-3">{{count.TobePicked}}</span>
+                          </div>
+                    </div>
+                </mat-card-content> 
+                </mat-card>
+            </div>
+            <div class="col-sm-3 mt-3">
+                <mat-card class="p-1 mat-elevation-z10 ripple-container" matRipple (click)="assigntodelivery()">
+                    <mat-card-header class="contentcentercolordeliver">
+                        <mat-card-title class="DashBoardCardHeaderpick mb-2 mt-2">Assign to deliver</mat-card-title>
+                      </mat-card-header>
+                      <mat-card-content class="DashBoardCardContent">
+                        <div class="col-sm-12">
+                            <div class="row d-flex justify-content-center">
+                              <span class="mt-3">{{count.OutforDelivery}}</span>
+                            </div>
+                      </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-sm-3 mt-3">
+                <mat-card class="p-1 mat-elevation-z10 ripple-container" matRipple (click)="delivered()">
+                    <mat-card-header class="contentcentercolordelived">
+                        <mat-card-title class="DashBoardCardHeaderpick mb-2 mt-2">Delivered</mat-card-title>
+                      </mat-card-header>
+                      <mat-card-content class="DashBoardCardContent">
+                        <div class="col-sm-12">
+                            <div class="row d-flex justify-content-center">
+                              <span class="mt-3">{{count.Delivered}}</span>
+                            </div>
+                      </div>
+                      </mat-card-content>
+                </mat-card>
+            </div>
+    </div>
+</div>

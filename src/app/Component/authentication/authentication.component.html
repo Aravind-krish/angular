@@ -1,0 +1,47 @@
+
+    <mat-card class="p-1">
+        <mat-card-header class="headercard justify-content-center">
+            <mat-card-title class="DashBoardCardHeader">Login</mat-card-title>
+          </mat-card-header>
+          <form [formGroup]="LoginGroup" (ngSubmit)="login($event)">
+          <div class="col-sm-12 mt-3">
+              <div class="row">
+                <div class="col-sm-12 mb-1 p-1">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Username</mat-label>
+                            <input formControlName="UserName" matInput>
+                        <mat-icon matSuffix>account_circle</mat-icon>
+                      </mat-form-field>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 mb-1 p-1">
+                  <mat-form-field appearance="outline">
+                      <mat-label>Password</mat-label>
+                      <input [type]="hide ? 'password' : 'text'" formControlName="Password" matInput type="password">
+                      <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 pt-0">
+            <div class="row d-flex justify-content-center">
+                        <span class="fontsize" (click)="verfication()">Forget password</span>
+                
+            </div>
+        </div>
+    
+        <div class="col-xs-12 p-0">
+            <div class="row justify-content-center">
+                <div class="col-xs-4 mt-3 mb-2 p-0">
+                    <button mat-raised-button type="submit" (click)="login()" class="Login">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </mat-card>
+    

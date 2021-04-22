@@ -1,0 +1,42 @@
+
+    <mat-card class="p-1">
+        <mat-card-header class="headercard">
+            <mat-card-title class="DashBoardCardHeader">Update Password</mat-card-title>
+          </mat-card-header>
+          <form [formGroup]="LoginGroup">
+          <div class="col-sm-12 mt-3">
+              <div class="row">
+                <div class="col-sm-12 mb-1 p-1">
+                    <mat-form-field appearance="outline">
+                        <mat-label>New Password</mat-label>
+                            <input formControlName="NewPassword" matInput>
+                       
+                      </mat-form-field>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 mb-1 p-1">
+                  <mat-form-field appearance="outline">
+                      <mat-label>Confirmed Password</mat-label>
+                      <input [type]="hide ? 'password' : 'text'" formControlName="CPassword" matInput type="password">
+                      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+       
+    </form>
+        <div class="col-xs-12 p-0">
+            <div class="row justify-content-center">
+                <div class="col-xs-4 mt-3 mb-2 p-0">
+                    <button mat-raised-button type="submit" (click)="UpdatePass()" class="Login">Update</button>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+
+

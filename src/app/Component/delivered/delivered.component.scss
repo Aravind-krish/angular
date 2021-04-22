@@ -1,0 +1,41 @@
+@import '../../../styles.scss';
+.img1{
+    position: relative;
+    width: 80px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+  }
+  .ordermargin{
+    margin-left: 30px;
+}
+.img2{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+}
+.ordermargin{
+  margin-left: 30px;
+}
+.ordernumber{
+  font-size: 18px;
+  font-weight: bold;
+}
+.locationadjustment{
+  font-size: 12px;
+  height: 0px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.expansionclass{
+  border-radius: 10px;
+}
+.expansionpannelsize{
+  width: 100%;
+  padding: 0px !important;
+}
+

@@ -1,0 +1,16 @@
+<div  class="col-sm-12 image" style="background-color: rgb(233, 223, 223); ">
+    <div class="row justify-content-center">
+        <div class="col-sm-3 margintop">
+            <div *ngIf = "screen == null">
+             <app-authentication></app-authentication>
+           </div>
+           <div *ngIf = "screen == 1">
+               <app-verification></app-verification>
+           </div>
+           <div *ngIf = "screen == 2">
+               <app-authentication-conformation></app-authentication-conformation>
+           </div>
+</div>
+    </div>
+</div>
+

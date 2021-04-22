@@ -1,0 +1,41 @@
+
+@import '../../../styles.scss';
+
+.DashBoardCardHeaderlogin{   
+    font-size: 20px;
+   font-weight: 600 !important;
+   color: #FFFFFF;
+   .mat-card-title{
+       font-size: 18px !important;
+       font-weight: bold !important;
+   }
+}
+.contentcentercolordeliver{
+        justify-content: center;
+        background-color: #EC4E20;
+ }
+ .contentcentercolordelived{
+    justify-content: center;
+    background-color: #0074D9;
+}
+ .DashBoardCardHeaderpick{   
+    font-size: 18px;
+   font-weight: 600 !important;
+   color: #FFFFFF;
+   .mat-card-title{
+       font-size: 18px !important;
+       font-weight: bold !important;
+   }
+}
+.contentcentercolorpick{
+    justify-content: center;
+    background-color: #F433AB;
+}
+ .cardcontenthight{
+    height: 90px;
+ }
+ .loginfont{
+     font-size: 15px;
+     font-weight: bold;
+ }
+

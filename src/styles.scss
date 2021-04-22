@@ -1,0 +1,52 @@
+
+//scroolbar
+::-webkit-scrollbar {
+  width: 5px;
+  height : 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(77, 134, 172); 
+ border-radius: 20px;
+}
+.mat-dialog-container
+{
+    overflow: hidden !important;
+    padding: 0px !important;
+}
+.ripple-container {
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  
+  }
+  .DashBoardCardContent{
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #464646;
+    height: 50px;
+}
+.OrderItemCaption{
+  font-size: 12px;
+  font-weight: bold;
+}
+.ItemCaption{
+  font-size: 10px;
+  font-weight: bold;
+}
+.menucustamize{
+  height: 100%;
+  width: 500px !important;
+}
